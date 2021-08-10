@@ -89,17 +89,15 @@ class IntersectionOfTwoLinkedListsLcci{
  * }
  */
 public class Solution {
+
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-      if (headA == null || headB == null) {
-        return null;
-      }
 
       ListNode aHead = headA;
       ListNode bHead = headB;
 
       while (aHead != bHead) {
-        aHead = aHead.next == null ? headB : aHead.next;
-        bHead = bHead.next == null ? headA : bHead.next;
+        aHead = aHead == null ? headB : aHead.next;
+        bHead = bHead == null ? headA : bHead.next;
       }
       return aHead;
     }
