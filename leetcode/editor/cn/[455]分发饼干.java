@@ -35,7 +35,7 @@
 // 0 <= s.length <= 3 * 10⁴ 
 // 1 <= g[i], s[j] <= 2³¹ - 1 
 // 
-// Related Topics 贪心 数组 排序 👍 364 👎 0
+// Related Topics 贪心 数组 排序 👍 365 👎 0
 
 import java.util.Arrays;
 
@@ -43,13 +43,11 @@ import java.util.Arrays;
  * 分发饼干
  *
  * @author wanwan
- * @date 2021-08-20 21:00:48
+ * @date 2021-08-21 09:34:13
  */
 class AssignCookies {
     public static void main(String[] args) {
-
         Solution solution = new AssignCookies().new Solution();
-        System.out.println(solution.findContentChildren(new int[]{1, 2}, new int[]{1, 2, 3}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
